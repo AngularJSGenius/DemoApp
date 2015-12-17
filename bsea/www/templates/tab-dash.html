@@ -1,0 +1,39 @@
+<ion-view>
+
+<ion-content class="padding">
+
+<div class="row responsive-sm">
+      
+<div class="col col-50">
+      <div class="item item-divider">MAP</div>
+      <div class="item item-body">
+        <div ng-controller="MapController">
+        There is a esri map in <b>sector 1</b>
+        <esri-map id="map" center="map.center" zoom="map.zoom" basemap="topo">
+        <esri-feature-layer url="http://services.arcgis.com/rOo16HdIMeOBI4Mb/arcgis/rest/services/Heritage_Trees_Portland/FeatureServer/0"></esri-feature-layer>
+        <esri-feature-layer url="http://services.arcgis.com/rOo16HdIMeOBI4Mb/arcgis/rest/services/Portland_Parks/FeatureServer/0"></esri-feature-layer>
+    </esri-map>
+        </div>
+      </div>
+</div>
+<br/>    
+<div class="col col-50">
+      <div class="item item-divider">BUS STOP INFORMATION</div>
+      <div class="item item-body">
+        <div>
+          details here!
+        </div>
+      </div>
+</div>
+    
+</div>
+    <div class="list card">
+      <div class="item item-divider">Upcoming</div>
+      <div class="item item-body">
+        <div>
+          You have <b>29</b> meetings on your calendar tomorrow.
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
